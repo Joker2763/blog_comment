@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+</head>
+<body>
+    <div id="gitalk-container"></div>
+    <script>
+        var gitalk = new Gitalk({
+             clientID: '7a9dfca89a9095c84d25',
+             clientSecret: '1a72f14ab0614db341e994cae4a0d9738a4da174',
+             repo: 'blog_comment',
+             owner: 'Joker2763',
+             admin:  ['Joker2763'],
+             id: location.pathname,      // Ensure uniqueness and len
+             distractionFreeMode: true  // Facebook-like distraction
+})
+gitalk.render('gitalk-container')
+    </script>
+</body>
+</html>
